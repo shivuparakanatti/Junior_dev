@@ -1,0 +1,78 @@
+/* TestimonialCarousel.css */
+
+/* Ensure the slick slider takes the full width and height */
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+  width: 100%;
+}
+
+/* Flex settings to align and center the slides */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide wrapper to ensure each slide occupies full available space */
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom styles for testimonial cards */
+.testimonial-card {
+  width: 460px; /* Fixed width for each card */
+  height: 300px; /* Fixed height for each card */
+  background-color: #2D2D2D; /* Dark gray background for contrast */
+  padding: 40px 30px 50px 30px; /* Padding as specified */
+  border-radius: 20px 0 0 0; /* Rounded top-left corner */
+  border-top: 1px solid #fff; /* Top border */
+  opacity: 1; /* Ensure visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px; /* Add some margin between cards */
+}
+
+/* Wave-like positioning for cards */
+.wave-card-top {
+  align-self: flex-start; /* Align card to the top */
+}
+
+.wave-card-bottom {
+  align-self: flex-end; /* Align card to the bottom */
+}
+
+/* Testimonial image styling */
+.testimonial-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Optional: Customize slick dots */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
